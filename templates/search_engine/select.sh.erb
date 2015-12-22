@@ -1,0 +1,1 @@
+bash -c '[[ $(sqlite3 <%= @web_data_path %> "SELECT keyword FROM keywords WHERE keyword=\"<%= @name %>\"") == "<%= @url %>\n" ]]'
